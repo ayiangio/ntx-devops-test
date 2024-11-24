@@ -25,11 +25,11 @@ jobs:
         run: |
           docker push ayiangio/node-app:latest
 
-      # - name: Deploy Service
-      #   uses: appleboy/ssh-action@master
-      #   with:
-      #     host: ${{ secrets.HOST }}
-      #     username: ${{ secrets.USER }}
-      #     password: ${{ secrets.PASS }}
-      #     port: 22
-      #     script: bash /home/yunandar/deploy.sh
+      - name: Deploy Service
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          password: ${{ secrets.PASS }}
+          port: 22
+          script: bash ${{ secrets.DIR }}/deploy.sh
