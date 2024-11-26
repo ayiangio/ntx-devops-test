@@ -81,7 +81,7 @@ listen stats
     a. Pada bagian node_frontend menerima dan meneruskan request dari Public, jika tidak didefine maka request dari public tidak akan masuk kedalam server
     b. pada bagian node_backend adalah config untuk menentukan alogoritma LB yang akan dipakai dan server tujuan 
     c. (optional) config untuk menexpose monitoring HAProxy  
-4. Untuk mengujinya bisa mengunjungi Link berikut http://157.10.160.82/ dan untuk melihat status dari HAProxy bisa mengunjungi link berikut http://157.10.160.82:8404/stats
+4. Untuk mengujinya bisa mengunjungi Link berikut http://157.10.160.82/ dan untuk melihat status dari HAProxy bisa mengunjungi link berikut http://157.10.160.82:8404/stats (admin:password)
 
 ---
 
